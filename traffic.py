@@ -68,9 +68,8 @@ def load_data(data_dir):
     inside each category directory is some
     number of image files.
 
-
     """
-    #data_dir="/Users/bibianamailyn/Documents/Maschine_learning/Python_code/src5/traffic/gtsrb"
+    #data_dir="/Users/bibianamailyn/Documents/Machine_learning/Python_code/src5/traffic/gtsrb"
     
     # List to store loaded images
     images = []
@@ -135,7 +134,7 @@ def get_model():
        # Flatten units
        tf.keras.layers.Flatten(),
 
-       # Add a hidden layer with dropout
+       # Add a hidden layer with dropout of 0.5
        tf.keras.layers.Dense(128, activation="relu"),
        tf.keras.layers.Dropout(0.5),
 
